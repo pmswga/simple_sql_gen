@@ -1,0 +1,42 @@
+{
+    "name": "Database",
+    "tables": [
+        {
+            "name": "users",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "int",
+                    "indexes": "primary key"
+                },
+                {
+                    "name": "sn",
+                    "type": "string"
+                },
+                {
+                    "name": "fn",
+                    "type": "string"
+                },
+                {
+                    "name": "pt",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "roles",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "int",
+                    "indexes": "primary key"
+                },
+                {
+                    "name": "caption",
+                    "type": "string",
+                    "indexes": "unique"
+                }
+            ]
+        }
+    ]
+}
